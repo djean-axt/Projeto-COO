@@ -7,7 +7,16 @@ public class Background {
 	private double speed;
 	private double count;
 	
+<<<<<<< HEAD
 	public Background() {
+=======
+	public Background(double xCoord, double yCoord, double speed, double count) {
+		super();
+		this.xCoord = xCoord;
+		this.yCoord = yCoord;
+		this.speed = speed;
+		this.count = count;
+>>>>>>> origin/master
 	}
 	
 	public double getxCoord() {

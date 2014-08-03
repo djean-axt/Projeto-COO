@@ -4,11 +4,16 @@ import java.util.ArrayList;
 
 import std.ep.game.elements.background.Background;
 import std.ep.game.elements.enemy.Enemy;
+<<<<<<< HEAD
 import std.ep.game.elements.enemy.Enemy1;
 import std.ep.game.elements.enemy.Enemy2;
 import std.ep.game.elements.player.Player;
 import std.ep.game.elements.projectile.Projectile;
 import std.ep.game.lib.GameLib;
+=======
+import std.ep.game.elements.player.Player;
+import std.ep.game.elements.projectile.Projectile;
+>>>>>>> origin/master
 
 public class ShootEmUpFacade {
 
@@ -16,8 +21,13 @@ public class ShootEmUpFacade {
 	ArrayList<Enemy> enemy2;
 	ArrayList<Enemy> enemy3;
 	
+<<<<<<< HEAD
 	ArrayList<Background> primary;
 	ArrayList<Background> secondary;
+=======
+	Background primary;
+	Background secondary;
+>>>>>>> origin/master
 	
 	Projectile projectile_e1;
 	Projectile projectile_e2;
@@ -31,6 +41,7 @@ public class ShootEmUpFacade {
 		long currentTime = System.currentTimeMillis();
 		
 		//inicializacao
+<<<<<<< HEAD
 		enemy1 = initializeEnemy();
 		
 		enemy2 = new ArrayList<>(10);
@@ -68,6 +79,11 @@ public class ShootEmUpFacade {
 		}
 		
 		return en;
+=======
+		enemy1 = new ArrayList<>(10);
+		for(int i = 0; i<enemy1.size(); i++) enemy1.add(new Enemy(0, 9.0, currentTime+7000));
+		
+>>>>>>> origin/master
 	}
 	
 }
